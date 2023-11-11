@@ -1,0 +1,107 @@
+/* Estilos para el header */
+header {
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para las subsecciones */
+#info-personal,
+#habilidades {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Estilos para los títulos de subsecciones */
+#info-personal h2,
+#habilidades h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+/* Estilos para los párrafos */
+p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Estilos para la lista de habilidades */
+#habilidades ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#habilidades li {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+}
+
+/* Estilos para enlaces */
+a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Estilos básicos aquí (los mismos que antes) */
+/* Media Queries para hacer la página responsiva */
+/* Estilos para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+  /* Podemos ajustar el padding del encabezado y las subsecciones */
+  header,
+  #info-personal,
+  #habilidades {
+    padding: 10px;
+  }
+  /* Y también cambiar el tamaño de la fuente del título */
+  h1,
+  h2 {
+    font-size: 18px;
+  }
+}
+/* Estilos para pantallas medianas (tabletas) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Aquí podríamos mantener el padding del encabezado y las
+    subsecciones igual */
+  header,
+  #info-personal,
+  #habilidades {
+    padding: 20px;
+  }
+  /* Pero quizás queremos que los títulos sean un poco más grandes que
+    en móviles pero menores que en desktop */
+  h1,
+  h2 {
+    font-size: 22px;
+  }
+}
+/* Estilos para pantallas grandes (desktops) */
+@media only screen and (min-width: 1025px) {
+  /* Aquí podríamos aumentar el padding del encabezado y las
+    subsecciones */
+  header,
+  #info-personal,
+  #habilidades {
+    padding: 30px;
+  }
+  /* Y hacer que los títulos sean más grandes */
+  h1,
+  h2 {
+    font-size: 28px;
+  }
+}
